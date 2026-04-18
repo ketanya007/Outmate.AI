@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "experimentalServices": {
+    "api": {
+      "entrypoint": "api/index.js",
+      "routePrefix": "/api"
+    },
+    "web": {
+      "framework": "vite",
+      "routePrefix": "/"
+    }
+  }
+}

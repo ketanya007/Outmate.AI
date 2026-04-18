@@ -1,0 +1,23 @@
+{
+  "name": "outmate-ai",
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd .. && mkdir -p public && cp -rv frontend/dist/* public/",
+    "start": "cd backend && npm start"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.37.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nedb": "^1.8.0",
+    "openai": "^6.34.0"
+  }
+}
